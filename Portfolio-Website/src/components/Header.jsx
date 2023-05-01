@@ -8,7 +8,6 @@ export default function Header() {
 
     const [header, setHeader] = useState(false);
     const [bgColor, setBgColor] = useState('');
-    const [headerStyle, setHeaderStyle] = useState(false);
 
     const toggleHeader = () => {
         setHeader(!header);
