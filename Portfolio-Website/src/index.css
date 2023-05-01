@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Style the dots */
+.slick-dots li button:before {
+    @apply bg-gray-500 rounded-full;
+}
+  
+/* Style the active dot */
+.slick-dots li.slick-active button:before {
+    @apply bg-gray-500;
+}
+
+button.slick-prev, button.slick-next {
+    @apply w-[2rem] h-[2rem]
+}
+
+button.slick-prev:before, button.slick-next:before {
+    @apply hidden md:block text-3xl scale-100 hover:scale-[1.1] transition duration-200;
+}
+
+button.slick-prev {
+    @apply -left-12;
+}
+
+button.slick-next {
+    @apply -right-12;
+}
+
+/* Style the image container */
+.slick-slide img {
+    @apply object-cover w-full h-[18rem] lg:h-[25rem];
+}
+
+.slick-track {
+    @apply flex gap-x-12
+}
